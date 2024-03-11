@@ -22,3 +22,4 @@ Route::get('/about', function () {
 });
 
 // Create additional Routes below
+Route::get('/create', fn() => view('/properties/create'));
