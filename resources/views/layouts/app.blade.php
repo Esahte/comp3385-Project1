@@ -11,7 +11,7 @@
 <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark" style="background-color: #15b8a7">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
-{{--            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">--}}
+            <img src="/public/images/home.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
             Your Brand Name
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"

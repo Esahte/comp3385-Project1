@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PropertyController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,4 +23,7 @@ Route::get('/about', function () {
 });
 
 // Create additional Routes below
-Route::get('/create', fn() => view('/properties/create'));
+Route::get('/properties/create', [PropertyController::class, 'index']);
+Route::post('/create', [PropertyController::class, 'store']);
+
+Route::get('/properties', fn()=>view('properties'));
