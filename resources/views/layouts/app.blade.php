@@ -7,12 +7,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
-<body  style="background-color: #f1f2f4">
+<body style="background-color: #f1f2f4">
 <nav class="navbar navbar-expand-lg fixed-top" data-bs-theme="dark" style="background-color: #15b8a7">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="/public/images/home.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Your Brand Name
+        <a class="navbar-brand" href="#" style="display: flex; align-items: center; justify-content: space-evenly;">
+            <img src="{{ url('images/home_FILL0_wght400_GRAD0_opsz40.svg') }}" alt="" width="30" height="30"
+                 class="d-inline-block align-text-top">
+            <span>Project 1</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,10 +28,10 @@
                     <a class="nav-link" href="{{ url('/about') }}">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url('/create') }}">New Properties</a>
+                    <a class="nav-link" href="{{ url('/properties/create') }}">New Properties</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Properties</a>
+                    <a class="nav-link" href="{{ url('/properties') }}">Properties</a>
                 </li>
             </ul>
         </div>

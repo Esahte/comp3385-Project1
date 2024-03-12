@@ -19,7 +19,7 @@ class PropertyRequest extends FormRequest
             'description' => ['required'],
             'photo'       => [
                 'required',
-                File::types(['png', 'jpg', 'webp', 'svg'])->max(12 * 1024)
+                File::types(['png', 'jpg', 'webp', 'svg', 'jpeg'])->max(12 * 1024)
             ],
         ];
     }

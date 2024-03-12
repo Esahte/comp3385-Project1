@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\PropertyController;
+use App\Http\Controllers\PropertyListingController;
+use App\Http\Controllers\PropertyPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,6 +26,7 @@ Route::get('/about', function () {
 
 // Create additional Routes below
 Route::get('/properties/create', [PropertyController::class, 'index']);
-Route::post('/create', [PropertyController::class, 'store']);
+Route::post('/property', [PropertyController::class, 'store']);
 
-Route::get('/properties', fn()=>view('properties'));
+Route::get('/properties', [PropertyListingController::class, 'index']);
+Route::get('/properties/{property_id}', [PropertyPageController::class, 'index']);
