@@ -3,11 +3,11 @@
 @section('content')
     <div class="container py-5">
         <h1 class="h1">Property</h1>
-        <div class="card mb-3" style="width: auto; height: 21.02rem">
+        <div class="card mb-3 h-100 w-100">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="{{ asset('storage/' . $properties->photo) }}" class="img-fluid rounded-start"
-                         alt="{{ $properties->title }} Photo" style="height: auto; object-fit: fill">
+                    <img src="{{ asset('storage/' . $properties->photo) }}" class="img-fluid rounded-start h-100 object-fit-fill"
+                         alt="{{ $properties->title }} Photo">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body text-left">
